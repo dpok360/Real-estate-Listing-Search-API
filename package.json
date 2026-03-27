@@ -6,6 +6,7 @@
   "author": "Deepak Suryavanshi <deepak.suyavanshi.360@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "prettier": "3.8.1",
     "typescript": "^6.0.2"
   }
 }
