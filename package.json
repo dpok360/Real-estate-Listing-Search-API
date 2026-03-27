@@ -1,0 +1,11 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dpok360/Real-estate-Listing-Search-API.git",
+  "author": "Deepak Suryavanshi <deepak.suyavanshi.360@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  }
+}
