@@ -1,0 +1,30 @@
+services:
+  postgresdb:
+    image: postgres:17.5
+    restart: always
+    command: postgres -c 'max_connections=100'
+    env_file:
+      - .env
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  real-state-listing-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - postgresdb
+    volumes:
+      - '.env.docker:/app/.env'
+    image: real-state-listing-api
+    env_file:
+      - .env.docker
+    ports:
+      - "7001:7001"
+
+volumes:
+  pgdata:
+  redis:
+  minio_data:

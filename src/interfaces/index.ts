@@ -1,0 +1,5 @@
+export * from './paginationInterface'
+export * from './IRouteInterface'
+export * from './modelExtendInterface'
+export * from './agentInterface'
+export * from './propertyInterface'
