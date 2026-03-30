@@ -112,6 +112,12 @@ const Property = sequelize.define<PropertyModelInterface>(
             field: 'internal_status_notes',
         },
 
+        imageUrl: {
+            type: Sequelize.TEXT,
+            allowNull: true,
+            field: 'image_url',
+        },
+
         listedAt: {
             type: Sequelize.DATE,
             allowNull: true,
