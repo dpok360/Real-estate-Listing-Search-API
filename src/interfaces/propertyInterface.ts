@@ -20,6 +20,7 @@ export interface InputPropertyInterface {
     listingStatus?: ListingStatus;
     internalStatusNotes?: string;
     listedAt?: Date;
+    imageUrl?: string;
 }
 
 export interface PropertyInterface extends InputPropertyInterface, ModelTimestampExtend {
